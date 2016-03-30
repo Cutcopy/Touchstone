@@ -1,0 +1,51 @@
+\:root
+  font-size: 15px
+
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: subpixel-antialiased
+
+body
+  font-family: $bodyfont
+  color: $bodycolor
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  font-family: $headerfont
+
+.container
+  width: 100%
+  max-width: $main-width
+  margin: 0 auto
+
+nav
+  ul
+    list-style-type: none
+    li
+      display: inline-block
+
+a
+  color: $brand
+  text-decoration: none
+  &:visited
+    color: $brand-dark
+  &:hover
+    color: $brand-light
+
+form
+  input,textarea
+    display: block
+
+
+/* utilities */
+
+// for screen readers
+.sr-only
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0,0,0,0)
+  border: 0
